@@ -36,8 +36,11 @@
     <section class="page-hero">
       <div class="container page-hero-card reveal">
         <div class="eyebrow">Contact Soga Pay</div>
-        <h1>Start a conversation with a <span class="highlight">strong professional presence</span>.</h1>
-        <p class="section-copy">Use this page for business enquiries, partnerships, support, or launch interest. Replace the placeholder details below with your real contact information whenever you are ready.</p>
+        <h1>Connect with the <span class="highlight">team behind Soga Pay</span>.</h1>
+        <p class="section-copy">
+          Whether you have a business inquiry, partnership opportunity, or support request,
+          we’re ready to assist. Send us a message and our team will get back to you shortly.
+        </p>
       </div>
     </section>
 
@@ -45,14 +48,21 @@
       <div class="container contact-grid reveal">
         <div class="contact-card">
           <div class="eyebrow">Send a message</div>
-          <h2 style="font-size:2rem;">A polished contact form for your launch site.</h2>
-          <p style="margin-top:14px;">This layout is ready for you to connect to email, Formspree, a backend API, or your preferred CRM later.</p>
-          <form class="form-grid">
-            <input class="input" type="text" placeholder="Full name">
-            <input class="input" type="email" placeholder="Email address">
-            <input class="input full" type="text" placeholder="Company or organization">
-            <textarea class="input full" placeholder="Tell us about your interest in Soga Pay"></textarea>
-            <div class="full"><button type="button" class="btn btn-primary btn-block">Submit inquiry</button></div>
+          <h2 style="font-size:2rem;">Start a conversation with Soga Pay</h2>
+          <p style="margin-top:14px;">
+            Whether you’re exploring the platform, interested in a partnership,
+            or need support, our team is ready to assist. Submit your details and
+            we’ll respond shortly.
+          </p>
+          <form class="form-grid" id="contactForm" novalidate>
+            <input class="input" type="text" name="fullName" placeholder="Full name" autocomplete="name" required>
+            <input class="input" type="email" name="email" placeholder="Email address" autocomplete="email" required>
+            <input class="input full" type="text" name="company" placeholder="Company or organization" autocomplete="organization">
+            <textarea class="input full" name="message" placeholder="Tell us about your interest in Soga Pay" required></textarea>
+            <div class="full">
+              <button type="submit" class="btn btn-primary btn-block" id="contactSubmitBtn">Submit inquiry</button>
+            </div>
+            <div class="full" id="contactFormStatus" aria-live="polite"></div>
           </form>
         </div>
 
@@ -62,7 +72,7 @@
           <div class="contact-stack">
             <div class="contact-item">
               <strong>Email</strong>
-              <p>hello@sogapay.com</p>
+              <p>cngiyulu@sogapay.com</p>
             </div>
             <div class="contact-item">
               <strong>Business enquiries</strong>
